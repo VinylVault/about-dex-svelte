@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Home | RichCodesWeb</title>
 </svelte:head>
 
 <section>

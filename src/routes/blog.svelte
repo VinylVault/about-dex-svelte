@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
+	<title>Rich's Blog | RichCodesWeb</title>
 </svelte:head>
 
 <div class="content">

@@ -3,66 +3,40 @@
 </script>
 
 <header >
-
+<img src="/static/rcw_logo.png" style="height: 75px; position: absolute; left: 10px" alt="Rich Codes Web Logo"/>
 
 	<nav>
 		<ul>
 			<li class:active={$page.url.pathname === '/'}><a sveltekit:prefetch href="/">About Rich</a></li>
 			<li class:active={$page.url.pathname === '/projects'}>
-				<a sveltekit:prefetch href="/projects">Rich's Projects & Portfolio</a>
+				<a sveltekit:prefetch href="/projects">Projects</a>
 			</li>
 			<li class:active={$page.url.pathname === '/blog'}>
-				<a sveltekit:prefetch href="/blog">Rich's Blog</a>
+				<a sveltekit:prefetch href="/blog">Blog</a>
 			</li>
 			<li class:active={$page.url.pathname === '/tech'}>
-				<a sveltekit:prefetch href="/tech">Rich's Tech Stack</a>
+				<a sveltekit:prefetch href="/tech">Tech Stack</a>
+			</li>
+			<li class:active={$page.url.pathname === '/contact'}>
+				<a sveltekit:prefetch href="/contact">Contact</a>
 			</li>
 		</ul>
 	</nav>
 
-	<div class="corner">
-		<!-- TODO put something else here? github link? -->
-	</div>
 </header>
 
 <style>
 	header {
 		display: flex;
-		justify-content: space-between;
-	}
-
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
-
-	.corner a {
-		display: flex;
-		align-items: center;
 		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
+	    @apply border-b-4 rounded-sm border-orange-600 drop-shadow-md p-4 bg-neutral-400 sticky top-0 bg-gray-600;
+		z-index: 9999999;
 	}
 
 	nav {
 		display: flex;
 		justify-content: center;
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
+		@apply sticky top-0 text-orange-600 p-4;
 	}
 
 	ul {
@@ -74,7 +48,6 @@
 		justify-content: center;
 		align-items: center;
 		list-style: none;
-		background: var(--background);
 		background-size: contain;
 	}
 
@@ -92,7 +65,7 @@
 		top: 0;
 		left: calc(50% - var(--size));
 		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--accent-color);
+		border-top: var(--size);
 	}
 
 	nav a {

@@ -1,16 +1,10 @@
 <script context="module">
 	import { browser, dev } from '$app/env';
 
-	// we don't need any JS on this page, though we'll load
-	// it in dev so that we get hot module replacement...
 	export const hydrate = dev;
 
-	// ...but if the client-side router is already loaded
-	// (i.e. we came here from elsewhere in the app), use it
 	export const router = browser;
 
-	// since there's no dynamic data here, we can prerender
-	// it so that it gets served as a static asset in prod
 	export const prerender = true;
 </script>
 
@@ -21,27 +15,48 @@
 <div class="content">
 	<h1>Rich's Tech Stack</h1>
 
-	<h2>
-		Home:
-	</h2>
-
-	<h2>
-		Servers:
-	</h2>
-
-	<!-- TODO lose the @next! -->
-	<pre>npm init svelte@next</pre>
-
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
+    <p>
+	<code>
+	Home:<br/>
+	Windows 10 PC - Multiple Monitors<br/>
+	SmartPhones & Tables:
+	--> Multiple Brands
+	--> Multiple Models
+	--> Operating Systems<br/>
+	JetBrains IDE Suite<br/>
+	Visual Studio Code<br/>
+	ProxMox HomeLab:
+	--> Ubuntu Server - Docker (Python, PHP, Node, Apache)
+	--> Ubuntu Server - Nextcloud<br/>
+	Multiple NAS
+	</code>
 	</p>
 
 	<p>
-		The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and form handling. Try using
-		it with JavaScript disabled!
-	</p>
+	<code>
+	Servers:<br/>
+	Docker Environment (Multiple Containers):<br/>
+	Alpine Linux<br/>
+	Ubuntu<br/>
+	Python:
+	-->Development Test Environments (One Per Site)
+	-->Production Test Environments (One Per Site)
+	-->Live Environments (One Per Site)<br/>
+	Node:
+	-->Development Test Environments (One Per Site)
+	-->Production Test Environments (One Per Site)
+	-->Live Environments (One Per Site)<br/>
+	Postgres (x1)<br/>
+	MySQL (x1)<br/>
+	LetsEncrypt: (x1)
+	-->Multiple Domains
+	-->Auto-Renew Configured<br/>
+	NginX Proxy (x1)
+
+	WordPress
+
+	SelfHosted GitLab</code></p>
+
 </div>
 
 <style>

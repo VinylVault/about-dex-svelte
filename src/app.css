@@ -1,47 +1,26 @@
-@import '@fontsource/fira-mono';
+/*@import '@fontsource/fira-mono';*/
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--font-mono: 'Fira Mono', monospace;
-	--pure-white: #ffffff;
-	--primary-color: #b9c6d2;
-	--secondary-color: #d0dde9;
-	--tertiary-color: #edf0f8;
-	--accent-color: #ff3e00;
-	--heading-color: rgba(0, 0, 0, 0.7);
-	--text-color: #444444;
-	--background-without-opacity: rgba(255, 255, 255, 0.7);
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
+	font-family: Ubuntu, 'Helvetica Neue', sans-serif;
 }
 
 body {
+	@apply text-white bg-gray-900;
 	min-height: 100vh;
 	margin: 0;
-	background-color: var(--primary-color);
-	background: linear-gradient(
-		180deg,
-		var(--primary-color) 0%,
-		var(--secondary-color) 10.45%,
-		var(--tertiary-color) 41.35%
-	);
+
 }
 
 body::before {
 	content: '';
-	width: 80vw;
 	height: 100vh;
 	position: absolute;
 	top: 0;
-	left: 10vw;
 	z-index: -1;
-	background: radial-gradient(
-		50% 50% at 50% 50%,
-		var(--pure-white) 0%,
-		rgba(255, 255, 255, 0) 100%
-	);
-	opacity: 0.05;
 }
 
 #svelte {
@@ -49,12 +28,35 @@ body::before {
 	display: flex;
 	flex-direction: column;
 }
+code {
+	font-family: 'Fira Code';
+	font-size: 1rem;
+	line-height: 1.5rem;
+	overflow-x: clip;
+	display: block;
+	white-space: pre;
+	margin: 1em 0px;
+	@apply bg-gray-500/10 block text-white border-b-4 rounded-sm border-orange-600 drop-shadow-lg shadow-orange-600/50 p-4;
+}
+
+@supports (font-variation-settings: normal) {
+	code {
+		font-family: 'Fira Code VF';
+		font-size: 1rem;
+		line-height: 1.5rem;
+		overflow-x: clip;
+		display: block;
+		white-space: pre;
+		margin: 1em 0px;
+		@apply bg-gray-500/10 block text-white border-b-4 rounded-sm border-orange-600 shadow-lg shadow-orange-600/50 p-4;
+	}
+}
 
 h1,
 h2,
 p {
 	font-weight: 400;
-	color: var(--heading-color);
+	@apply text-white py-2;
 }
 
 p {
@@ -62,7 +64,7 @@ p {
 }
 
 a {
-	color: var(--accent-color);
+	@apply text-orange-600;
 	text-decoration: none;
 }
 
@@ -71,23 +73,23 @@ a:hover {
 }
 
 h1 {
-	font-size: 2rem;
-	text-align: center;
+	@apply text-8xl text-orange-600 py-4;
+	font-variant: small-caps;
 }
 
 h2 {
-	font-size: 1rem;
+	@apply text-6xl text-orange-600 py-4;
+	font-variant: small-caps;
 }
 
-pre {
-	font-size: 16px;
-	font-family: var(--font-mono);
-	background-color: rgba(255, 255, 255, 0.45);
-	border-radius: 3px;
-	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-	padding: 0.5em;
-	overflow-x: auto;
-	color: var(--text-color);
+h3 {
+	@apply text-4xl text-orange-600 py-4;
+	font-variant: small-caps;
+}
+
+h4 {
+	@apply text-2xl text-orange-600 py-4;
+	font-variant: small-caps;
 }
 
 input,
@@ -98,6 +100,38 @@ button {
 
 button:focus:not(:focus-visible) {
 	outline: none;
+}
+
+div.portfolio {
+	@apply grid grid-cols-3 gap-x-4 gap-y-16 w-full;
+}
+
+div.portfolio-item {
+	@apply border-b-4 w-full rounded-sm border-orange-600 shadow-lg shadow-orange-600/50;
+}
+
+div.portfolio-item img {
+	@apply shadow-lg shadow-black/50 rounded-md;
+}
+
+h3.portfolio-title {
+	@apply text-center;
+}
+
+p.portfolio-description,
+p.portfolio-year {
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+}
+
+code.portfolio-tags{
+	@apply border-b-0 shadow-gray-500/50 mb-8 text-white;
+;
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 @media (min-width: 720px) {

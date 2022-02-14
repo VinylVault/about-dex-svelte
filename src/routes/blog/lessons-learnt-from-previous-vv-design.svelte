@@ -42,7 +42,18 @@
             professional looking website, rather than taking the website design from a casual design for a twitch stream.
             This mistake <strong>will not</strong> be made again.
         </p>
-
+        <p>
+            Going forward, once I've mastered <strong>Figma</strong>, all Websites will be designed in
+            <strong>Figma</strong>, and where needed, so will Stream Graphics.
+        </p>
+        <p>
+            Once I've completed the RichCodesWeb site, and also the Discogs Library Tool (but not necessarily all the add-ons)
+            I'll start with a concerted effort to learn and master <strong>Figma</strong>.
+        </p>
+        <p>
+            You will be able to follow this learning process as well as all my coding adventures on
+            <a href="https://www.twitch.tv/RichCodesWeb" target="_blank">My Twitch Channel</a> LIVE.
+        </p>
     </div>
 
 </div>

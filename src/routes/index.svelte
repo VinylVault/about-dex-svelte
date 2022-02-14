@@ -134,14 +134,93 @@
 	</h4>
 
 	<p>
-		These Competencies are not listed in any order of expertise, I feel comfortable enough to list
-		them here, as a competency that I would be able to work in, just not at a professional level.
+		Here is a brief history of Rich's work life.
 	</p>
+	<div class="frame">
+		<pre>
+		Company -> Various<br/>
+		<br/>
+		Years -> 2018 to Present<br/>
+		<br/>
+		Job Title -> Ad-Hoc Beta Tester<br/>
+		<br/>
+		About -> Naturally, I can't go into details about the companies and products that I have been involved in Beta
+		Testing, but in general terms, I have worked on: <br/>
+		-> <strong>Operating Systems</strong> (Closed and Public Beta Programs),<br/>
+		-> <strong>Games</strong> (Closed and Public Beta Programs),<br/>
+		-> <strong>Numerous Open Source Projects</strong>
+		</pre>
+	</div>
+
+	<div class="frame">
+		<pre>
+		Company -> Various<br/>
+		<br/>
+		Years -> 2019 to Present<br/>
+		<br/>
+		Job Title -> Various Roles<br/>
+		<br/>
+		About -> In 2019, A life changing series of personal circumstances paid a visit, which resulted in the need to close
+		down Optik Web Creative, and for me to change the area in which I live.<br/>
+		<br/>
+		Despite this, after a period of time for me to re-adjust, I applied myself to learning and improving my web
+		development skills, learning new technologies and languages (including Python) via online training courses.<br/>
+		<br/>
+		In recent weeks, I have started to develop my own Open Source TypeScript Library and suite of Add-Ons.<br/>
+		<br/>
+		I also turned my hand to employment outside of IT, proving to be adept at Just-In-Time Same Day deliveries via
+		agencies for household names such as Amazon, and Wickes.
+		</pre>
+	</div>
+
+	<div class="frame">
+		<pre>
+		Company -> Optik Web Creative<br/>
+		<br/>
+		Years -> 2016 to 2019<br/>
+		<br/>
+		Job Title -> Managing Director, and Chief Web Developer<br/>
+		<br/>
+		About -> Main point of customer contact, for sales enquiries and design work.<br/>
+		<br/>
+		Recruiting and Managing Staff<br/>
+		<br/>
+		Designing and Developing vibrant, engaging and unique websites for customers, both direct and via agencies,
+		using a variety of technologies including WordPress, Joomla, Magento and Custom-built PHP websites.
+		</pre>
+	</div>
+
+	<div class="frame">
+		<pre>
+		Company -> Various Agencies<br/>
+		<br/>
+		Years -> 2000 to 2016<br/>
+		<br/>
+		Job Title -> Computer Consultant, Helpdesk Engineer, Software Engineer<br/>
+		<br/>
+		About -> Being an IT contractor, I had to be able to hit the ground running very quickly on starting with a
+		company.  <br/>
+		<br/>
+		Contracts would typically vary from 4-weeks to 6-months with occasional longer contracts upto 12-months.<br/>
+		<br/>
+		For a typical Helpdesk role, I would have to learn any specific systems, and policies quickly, without asking
+		too many questions of the hiring manager or other colleagues.<br/>
+		<br/>
+		Computer Consultant roles, would naturally vary between Desktop and Server Hardware Rollouts, to servicing
+		hardware either in the field or in the home base office.<br/>
+		<br/>
+		For me, though the most challenging and enjoyable roles were the Software Engineering, which although very
+		similar to a Helpdesk role, the software and challenges were significantly different, as I would be
+		specifically supporting in-house written software, and writing bug reports to send to the development team.
+		</pre>
+	</div>
 
 </section>
 
 <style>
-	header {
+	.frame{
+		margin: 1em 0px;
+		@apply bg-gray-500/10 block text-white border-b-4 rounded-sm border-orange-600 shadow-lg shadow-orange-600/50 p-4;
 	}
 
 	section {
@@ -158,5 +237,11 @@
 		width: 100%;
 		height: 100%;
 		display: block;
+	}
+	
+	pre {
+		white-space: normal;
+		text-align: justify;
+		font-family: 'Fira Code';
 	}
 </style>

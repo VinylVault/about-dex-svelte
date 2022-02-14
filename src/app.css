@@ -12,6 +12,7 @@ body {
 	@apply text-white bg-gray-900;
 	min-height: 100vh;
 	margin: 0;
+	font-size: 1.25rem;
 
 }
 
@@ -30,7 +31,7 @@ body::before {
 }
 code {
 	font-family: 'Fira Code';
-	font-size: 1rem;
+	font-size: 1.25rem;
 	line-height: 1.5rem;
 	overflow-x: clip;
 	display: block;
@@ -42,7 +43,7 @@ code {
 @supports (font-variation-settings: normal) {
 	code {
 		font-family: 'Fira Code VF';
-		font-size: 1rem;
+		font-size: 1.25rem;
 		line-height: 1.5rem;
 		overflow-x: clip;
 		display: block;
@@ -66,6 +67,8 @@ p {
 a {
 	@apply text-orange-600;
 	text-decoration: none;
+	font-variant: small-caps;
+	font-weight: 600;
 }
 
 a:hover {
